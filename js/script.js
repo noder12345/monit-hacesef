@@ -160,7 +160,7 @@ function showResult(){
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
-        let scoreTag = '<span> 😐טעית בהכל <p>'+ userScore +'</p> מתוך <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span> 😐נפסלת <p>'+ userScore +'</p> מתוך <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }
