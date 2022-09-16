@@ -150,12 +150,12 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3){ // if user scored more than 3
+    if (userScore > 8{ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<span> חריף!,🎉 זכית ב-100 אלף שקל (בלי נדר) <p>'+ userScore +'</p>מתוך <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
-    else if(userScore > 1){ // if user scored more than 1
+    else if(userScore > 5){ // if user scored more than 1
         let scoreTag = '<span> יפה! השגת 😎 <p>'+ userScore +'</p> מתוך <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
